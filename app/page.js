@@ -27,10 +27,10 @@ export default function Home() {
           className='absolute inset-0 flex items-center justify-center pt-20' /* pt-20 to give space for the navbar */
         >
           <div className='text-center text-sunset-lightOrange'>
-            <h1 className='text-4xl md:text-6xl font-light text-shadow-outline font-body'>
+            <h1 className='text-4xl md:text-6xl font-regular text-shadow-outline font-body px-2'>
               Powering Homes with Precision
             </h1>
-            <p className='mt-4 text-sunset-whitePeach text-lg font-regular text-shadow-outline font-body md:text-2xl'>
+            <p className='mt-4 text-sunset-whitePeach text-lg font-regular text-shadow-outline font-body md:text-2xl px-6'>
               Reliable residential electrical services from licensed
               professionals.
             </p>
@@ -52,7 +52,7 @@ export default function Home() {
           <h2 className='text-4xl font-heading font-bold text-sunset-deepAmber'>
             About Helios
           </h2>
-          <p className='mt-4 text-sunset-coolGray font-body font-regular text-xl max-w-3xl mx-auto'>
+          <p className='mt-4 text-sunset-coolGray font-body font-light text-xl max-w-3xl mx-auto px-6'>
             At Helios Electric, we believe every home deserves safe and
             efficient electrical work. With over 15 years of experience, our
             licensed electricians specialize in residential wiring, lighting,
@@ -143,7 +143,7 @@ export default function Home() {
           <h2 className='text-4xl font-heading font-bold text-sunset-deepAmber'>
             Recent Projects
           </h2>
-          <p className='mt-4 font-body text-xl text-sunset-coolGray max-w-2xl mx-auto'>
+          <p className='mt-4 font-body text-xl font-light text-sunset-coolGray max-w-2xl mx-auto'>
             From full-home renovations to smart home upgrades, take a look at
             some of our favorite residential projects.
           </p>
