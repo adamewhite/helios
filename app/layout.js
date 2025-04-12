@@ -46,6 +46,7 @@ export const metadata = {
         height: 630,
       },
     ],
+    type: 'website', // Added og:type
   },
   twitter: {
     card: 'summary_large_image',
@@ -92,6 +93,33 @@ export default function RootLayout({ children }) {
         <link
           rel='manifest'
           href='/site.webmanifest'
+        />
+        {/* Open Graph meta tags */}
+        <meta
+          property='og:title'
+          content='Helios Electric | Residential Electrical Services'
+        />
+        <meta
+          property='og:description'
+          content='Powering homes with precision. Reliable residential electrical services from licensed professionals.'
+        />
+        <meta
+          property='og:image'
+          content='https://www.helios-electric.com/sun-image.jpg'
+        />
+        <meta
+          property='og:url'
+          content='https://www.helios-electric.com'
+        />
+        <meta
+          property='og:type'
+          content='website'
+        />{' '}
+        {/* Added og:type */}
+        {/* Optional: Add fb:app_id if you're using a Facebook app */}
+        <meta
+          property='fb:app_id'
+          content='YOUR_FACEBOOK_APP_ID'
         />
       </head>
       <body>{children}</body>
