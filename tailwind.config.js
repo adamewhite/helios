@@ -4,7 +4,7 @@ module.exports = {
   theme: {
     extend: {
       textShadow: {
-        outline: '0 0 5px rgba(0, 0, 0, 0.5), 0 0 10px rgba(0, 0, 0, 0.5)', // Faint outline shadow
+        outline: '0 0 5px rgba(0, 0, 0, 0.5), 0 0 10px rgba(0, 0, 0, 0.5)', // Faint outline shadower
       },
       colors: {
         sunset: {
