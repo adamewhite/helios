@@ -1,28 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Special+Gothic+Expanded+One&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-@theme {
-  --font-gothic: 'Special Gothic Expanded One', sans-serif;
-}
-
-:root {
-  --dark-orange-rgb: 251, 133, 0;
-  --dark-blue-rgb: 2, 48, 71;
-  --mid-blue-rgb: 33, 158, 188;
-  --light-blue-rgb: 142, 202, 230;
-  --light-orange-rgb: 255, 183, 3;
-  --off-white-rgb: 254, 250, 224;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 2, 48, 71;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
 
 body {
 }

@@ -1,74 +1,42 @@
 import Image from 'next/image';
+import NavBar from './NavBar';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import {
+  faFacebookF,
+  faInstagram,
+  faYelp,
+} from '@fortawesome/free-brands-svg-icons';
+import { faPhoneAlt, faEnvelope } from '@fortawesome/free-solid-svg-icons';
+import IconTest from './Test';
 
 export default function Home() {
   return (
     <>
-      <nav className='bg-sunset-desertSand shadow-md'>
-        <div className='container mx-auto px-4 py-1'>
-          <div className='flex justify-between items-center py-4'>
-            <a
-              href='#'
-              className='text-4xl font-heading font-semibold text-sunset-deepAmber'
-            >
-              Helios Electric
-            </a>
-            <ul className='hidden md:flex space-x-8'>
-              <li>
-                <a
-                  href='#about'
-                  className='text-sunset-amber font-heading text-xl hover:text-sunset-deepAmber'
-                >
-                  About
-                </a>
-              </li>
-              <li>
-                <a
-                  href='#services'
-                  className='text-sunset-amber font-heading text-xl hover:text-sunset-deepAmber'
-                >
-                  Services
-                </a>
-              </li>
-              <li>
-                <a
-                  href='#projects'
-                  className='text-sunset-amber font-heading text-xl hover:text-sunset-deepAmber'
-                >
-                  Projects
-                </a>
-              </li>
-              <li>
-                <a
-                  href='#contact'
-                  className='text-sunset-amber font-heading text-xl hover:text-sunset-deepAmber'
-                >
-                  Contact
-                </a>
-              </li>
-            </ul>
-            <button className='md:hidden text-gray-600 focus:outline-none'>
-              {/* Mobile menu button */}
-            </button>
-          </div>
-        </div>
-      </nav>
-
       <header
         className='relative bg-cover bg-center h-screen'
         style={{ backgroundImage: "url('sun-image.jpg')" }}
       >
-        <div className='absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center'>
-          <div className='text-center text-sunset-softCoral'>
-            <h1 className='text-4xl md:text-6xl font-body'>
+        {/* NavBar */}
+        <div className='absolute top-0 left-0 w-full z-10'>
+          <NavBar />
+        </div>
+
+        {/* Centered Text */}
+        <div
+          id='middle-text'
+          className='absolute inset-0 flex items-center justify-center pt-20' /* pt-20 to give space for the navbar */
+        >
+          <div className='text-center text-sunset-lightOrange'>
+            <h1 className='text-4xl md:text-6xl font-light text-shadow-outline font-body'>
               Powering Homes with Precision
             </h1>
-            <p className='mt-4 text-sunset-whitePeach text-lg font-body md:text-xl'>
+            <p className='mt-4 text-sunset-whitePeach text-lg font-regular text-shadow-outline font-body md:text-2xl'>
               Reliable residential electrical services from licensed
               professionals.
             </p>
             <a
               href='#services'
-              className='mt-6 inline-block bg-sunset-amber text-gray-800 py-2 px-6 rounded-lg text-lg font-heading font-semibold'
+              className='mt-6 inline-block bg-sunset-softCoral text-sunset-whitePeach py-2 px-6 rounded-lg text-lg font-heading font-semibold'
             >
               View Services
             </a>
@@ -84,7 +52,7 @@ export default function Home() {
           <h2 className='text-4xl font-heading font-bold text-sunset-deepAmber'>
             About Helios
           </h2>
-          <p className='mt-4 text-sunset-coolGray font-body text-xl max-w-3xl mx-auto'>
+          <p className='mt-4 text-sunset-coolGray font-body font-regular text-xl max-w-3xl mx-auto'>
             At Helios Electric, we believe every home deserves safe and
             efficient electrical work. With over 15 years of experience, our
             licensed electricians specialize in residential wiring, lighting,
@@ -102,6 +70,7 @@ export default function Home() {
           <h2 className='text-4xl font-heading font-bold text-sunset-deepAmber text-center'>
             Our Services
           </h2>
+
           <div className='mt-8 grid gap-8 md:grid-cols-3'>
             <div className='bg-white shadow-lg rounded-lg overflow-hidden'>
               <div className='relative w-full h-56'>
@@ -116,7 +85,7 @@ export default function Home() {
                 <h3 className='text-2xl font-heading font-semibold text-sunset-deepAmber'>
                   Panel Upgrades
                 </h3>
-                <p className='mt-2 text-xl font-body text-sunset-coolGray'>
+                <p className='mt-2 text-xl font-body font-regular text-sunset-coolGray'>
                   Upgrade your electrical panel to meet modern safety and
                   capacity needs.
                 </p>
@@ -133,7 +102,7 @@ export default function Home() {
                 />
               </div>
               <div className='p-6'>
-                <h3 className='text-2xl font-heading font-semibold text-sunset-deepAmber'>
+                <h3 className='text-2xl font-heading font-regular font-semibold text-sunset-deepAmber'>
                   Whole-Home Rewiring
                 </h3>
                 <p className='mt-2 text-xl font-body text-sunset-coolGray'>
@@ -156,7 +125,7 @@ export default function Home() {
                 <h3 className='text-2xl font-heading font-semibold text-sunset-deepAmber'>
                   Custom Lighting
                 </h3>
-                <p className='mt-2 text-xl font-body text-sunset-coolGray'>
+                <p className='mt-2 text-xl font-body font-regular text-sunset-coolGray'>
                   From kitchens to landscapes, we design and install lighting to
                   enhance your home.
                 </p>
@@ -228,28 +197,52 @@ export default function Home() {
           </div>
         </div>
       </section>
-
       <footer className='bg-white py-8 border-t'>
         <div className='container mx-auto px-4 font-body text-center text-sunset-coolGray'>
           <p>&copy; 2025 Helios Electric. All rights reserved.</p>
-          <div className='mt-4 space-x-4'>
+
+          <div className='mt-4 flex justify-center items-center space-x-3 py-4'>
             <a
-              href='#'
-              className='hover:text-sunset-amber'
+              href='https://facebook.com/yourprofile'
+              target='_blank'
+              rel='noopener noreferrer'
             >
-              Instagram
+              <FontAwesomeIcon
+                icon={faFacebookF}
+                className='text-blue-600 w-8 h-8'
+              />
             </a>
             <a
-              href='#'
-              className='hover:text-sunset-amber'
+              href='https://instagram.com/yourprofile'
+              target='_blank'
+              rel='noopener noreferrer'
             >
-              Facebook
+              <FontAwesomeIcon
+                icon={faInstagram}
+                className='text-pink-600 w-8 h-8 hover:text-pink-800 transition-colors'
+              />
             </a>
             <a
-              href='#'
-              className='hover:text-sunset-amber'
+              href='https://yelp.com/yourprofile'
+              target='_blank'
+              rel='noopener noreferrer'
             >
-              Yelp
+              <FontAwesomeIcon
+                icon={faYelp}
+                className='text-red-600 w-8 h-8 hover:text-red-800 transition-colors'
+              />
+            </a>
+            <a href='tel:+1234567890'>
+              <FontAwesomeIcon
+                icon={faPhoneAlt}
+                className='text-green-600 w-8 h-8 hover:text-green-800 transition-colors'
+              />
+            </a>
+            <a href='mailto:youremail@example.com'>
+              <FontAwesomeIcon
+                icon={faEnvelope}
+                className='text-gray-600 w-8 h-8 hover:text-gray-800 transition-colors'
+              />
             </a>
           </div>
         </div>

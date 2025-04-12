@@ -3,6 +3,9 @@ module.exports = {
   content: ['./app/**/*.{js,ts,jsx,tsx}', './pages/**/*.{js,ts,jsx,tsx}'],
   theme: {
     extend: {
+      textShadow: {
+        outline: '0 0 5px rgba(0, 0, 0, 0.5), 0 0 10px rgba(0, 0, 0, 0.5)', // Faint outline shadow
+      },
       colors: {
         sunset: {
           lightOrange: '#ffd5a4',
@@ -20,10 +23,10 @@ module.exports = {
         },
       },
       fontFamily: {
-        heading: ['var(--font-cabin)', 'sans-serif'],
-        body: ['var(--font-andada-pro)', 'serif'],
+        heading: ['var(--font-michroma)', 'sans-serif'],
+        body: ['var(--font-sofia)', 'sans-serif'],
       },
     },
   },
-  plugins: [],
+  plugins: [require('tailwindcss-textshadow')],
 };
