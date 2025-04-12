@@ -30,7 +30,7 @@ export const metadata = {
   description:
     'Powering homes with precision. Reliable residential electrical services from licensed professionals.',
   icons: {
-    icon: '/favicon.ico', // Favicon for general use
+    icon: '/favicon-new.ico', // Favicon for general use
     apple: '/apple-touch-icon.png', // Apple touch icon
     // Add more icons if needed
   },
@@ -71,7 +71,7 @@ export default function RootLayout({ children }) {
       <head>
         <link
           rel='icon'
-          href='/favicon.ico'
+          href='/favicon-new.ico'
         />
         <link
           rel='icon'
