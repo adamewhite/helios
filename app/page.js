@@ -7,14 +7,13 @@ import {
   faYelp,
 } from '@fortawesome/free-brands-svg-icons';
 import { faPhoneAlt, faEnvelope } from '@fortawesome/free-solid-svg-icons';
-import IconTest from './Test';
 
 export default function Home() {
   return (
     <>
       <header
         className='relative bg-cover bg-center h-screen'
-        style={{ backgroundImage: "url('sun-image.jpg')" }}
+        style={{ backgroundImage: "url('/sun-image.jpg')" }}
       >
         {/* NavBar */}
         <div className='absolute top-0 left-0 w-full z-10'>
