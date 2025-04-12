@@ -201,7 +201,7 @@ export default function Home() {
         <div className='container mx-auto px-4 font-body text-center text-sunset-coolGray'>
           <p>&copy; 2025 Helios Electric. All rights reserved.</p>
 
-          <div className='mt-4 flex justify-center items-center space-x-3 py-4'>
+          <div className='mt-4 flex justify-center items-center space-x-3 py-3'>
             <a
               href='https://facebook.com/yourprofile'
               target='_blank'
