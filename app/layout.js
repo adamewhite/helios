@@ -41,7 +41,7 @@ export const metadata = {
     url: 'https://www.helios-electric.com',
     images: [
       {
-        url: 'https://www.helios-electric.com/sun-image.jpg',
+        url: 'https://helios-ruddy.vercel.app/sun-image.jpg',
         width: 1200,
         height: 630,
       },
@@ -53,7 +53,7 @@ export const metadata = {
     title: 'Helios Electric | Residential Electrical Services',
     description:
       'Powering homes with precision. Reliable residential electrical services from licensed professionals.',
-    images: ['https://www.helios-electric.com/sun-image.jpg'],
+    images: ['https://helios-ruddy.vercel.app/sun-image.jpg'],
   },
   // Meta for favicon and other touch icons
   appleWebApp: {
@@ -105,11 +105,11 @@ export default function RootLayout({ children }) {
         />
         <meta
           property='og:image'
-          content='https://www.helios-electric.com/sun-image.jpg'
+          content='https://helios-ruddy.vercel.app/sun-image.jpg'
         />
         <meta
           property='og:url'
-          content='https://www.helios-electric.com'
+          content='https://helios-ruddy.vercel.app'
         />
         <meta
           property='og:type'
